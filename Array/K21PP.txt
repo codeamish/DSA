@@ -1,0 +1,4 @@
+
+amish	6000
+ashish	4000
+hlo	4000
