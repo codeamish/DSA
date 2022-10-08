@@ -1,7 +1,7 @@
 #include<bits/stdc++.h> 
 using namespace std; 
 
-void BFS(vector<int> adj[], int V, int s,int dist[]) 
+void BFS(vector<int> adj[],  int V, int s,int dist[]) 
 { 
 	bool visited[V]; 
 	for(int i = 0; i < V; i++) 
@@ -34,7 +34,7 @@ void addEdge(vector<int> adj[], int u, int v){
 
 int main() 
 { 
-	int V=4;
+ int V=4;
 	vector<int> adj[V];
 	addEdge(adj,0,1); 
 	addEdge(adj,1,2); 
