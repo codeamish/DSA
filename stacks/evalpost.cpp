@@ -49,9 +49,20 @@ int evalPostfix(string exp)
  
 int main()
 {
-    string exp = "138*+4-";
- 
-    cout << evalPostfix(exp);
- 
+     string post="";
+    char ch;
+    int t=0;
+    while(t++>=0)
+    {
+        ch='k';
+        cin>>ch;
+        if(ch=='k')
+            break;
+        post=post+ch;
+    }
+    if(t==5)
+        cout<<"Invalid Input";
+    else
+        cout <<evalPostfix(post);
     return 0;
 }

@@ -6,16 +6,22 @@ bool DFSRec(vector<int> adj[], int s,bool visited[], int parent)
     visited[s]=true;
     
     for(int u:adj[s]){
-        if(visited[u]==false){
+        if(visited[u]==false)
+        {
             if(DFSRec(adj,u,visited,s)==true)
-                {return true;}}
+            {
+                return true;
+            }
+        }
         else if(u!=parent)
-            {return true;}
+        {
+            return true;
+        }
     }
     return false;
 }
 
-bool DFS(vector<int> adj[], int V){
+bool DFS(vector<int> adj[],int V){
     bool visited[V]; 
 	for(int i=0;i<V; i++) 
 		visited[i] = false;
