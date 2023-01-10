@@ -20,3 +20,4 @@ int main()
     root->left->left = new Node(40);
     cout<<root->key<<"\t"<<root->left->key;
 }
+

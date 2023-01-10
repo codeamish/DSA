@@ -72,6 +72,5 @@ int main()
     cout << "\nCloned list : \n"; 
     Node *cloned_list = clone(head); 
     print(cloned_list); 
-  
     return 0; 
 } 

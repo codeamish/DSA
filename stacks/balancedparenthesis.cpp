@@ -29,8 +29,13 @@ bool isBalanced(string str){
 
 int main()
 {
-    string str = "{()}[]"; 
-    
+    string str;
+    cin>>str;
+    if(str.length()>10)
+    {
+        cout<<"Stack Full";
+        return 0;
+    }
     if (isBalanced(str)) 
         cout << "Balanced"; 
     else
@@ -38,4 +43,3 @@ int main()
 
     return 0; 
 }
-// Time complexity is big O of n and the space complexity is also big O of n or auxiliary space is also big O of n
